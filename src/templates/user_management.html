@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+    <p>Welcome, {{ user.username }}!</p>
+    <ul>
+        {% for other_user in users %}
+            <li>{{ other_user.username }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/juice_billing">Go to Juice Billing</a></p>
+    <p><a href="/logout">Logout</a></p>
+</body>
+</html>
